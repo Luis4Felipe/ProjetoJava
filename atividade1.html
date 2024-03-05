@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let dado = prompt("Digite um dado:");
+        /*var confirmar = confirm("Deseja verificar o tipo do dado informado?");
+
+        if (confirmar) {
+            document.write("O tipo do dado é: " + typeof dado);
+            if (dado.parseFloat(string == false)){
+                document.write("O tipo de dado é um numero");
+            }
+        } 
+        else {
+            document.write("Obrigado por visitar esta página");
+        }*/
+        if (isNaN (dado)){
+            if (confirm("Quer conferir o dado?")){
+                document.write("O dado " + dado + " é uma String");
+            } else (dado == null) {
+                document.write("Obrigado por visitar esta página");
+            }
+        }
+        if (dado === string){
+            documen.write("O dado " + dado + " é um Numero");
+        }
+    </script>
+</body>
+</html>
