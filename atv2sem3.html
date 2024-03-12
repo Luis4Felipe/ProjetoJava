@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2</title>
+    <script>
+        const horaAtual = new Date();
+
+        const hora = horaAtual.getHours();
+        const minuto = horaAtual.getMinutes();
+        const segundos = horaAtual.getSeconds();
+
+        const formatoHora = `${hora}:${minuto}:${segundos}`;
+
+        setInterval(function(horaAtual){
+            location.reload();
+        }, 1000);
+
+    document.write(formatoHora);
+    console.log(formatoHora);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

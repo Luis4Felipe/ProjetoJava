@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3</title>
+</head>
+<body>
+    <label for="textoInput">Digite uma palavra ou frase:</label>
+    <input type="text" id="textoInput">
+    <button onclick="verificarPalindromo()">Verificar</button>
+
+    <script>
+        function verificarPalindromo(){
+            const texto = document.getElementById('textoInput').value.toLowerCase().replace(/[^a-z0-9]/g, '');
+            const tamanho = texto.length;
+            let palindromo = true;
+
+            for(let i = 0; i < Math.floor(tamanho / 2); i++){
+                if (texto[i] !== texto[tamanho - 1 - i]){
+                    palindromo = false;
+                    break;
+                }
+            }
+            alert(palindromo ? `"${texto}" é um palindromo!"` : `"${texto}" não é um palindromo!`);
+        }
+    </script>
+</body>
+</html>
